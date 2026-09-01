@@ -1,4 +1,4 @@
-document.getElementById('year').textContent = '© ' + new Date().getFullYear() + ' Daniel Sweet — no framework, just html/css/js';
+document.getElementById('year').textContent = '© ' + new Date().getFullYear() + ' Daniel Sweet, made with html/css/js';
 
 var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
