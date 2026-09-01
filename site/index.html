@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>~/daniel-sweet</title>
+<meta name="description" content="Daniel Sweet — Computer Science senior at CSUN. Full-stack development and self-hosted systems infrastructure.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%B0%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="prompt">~/<strong>daniel-sweet</strong> $</span>
+    <nav class="navlinks">
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section id="hero" class="panel">
+    <div class="terminal" id="boot">
+      <div class="line"><span class="out"></span><span class="cursor" id="bootCursor"></span></div>
+    </div>
+    <h1 class="hero-name">DANIEL<br>SWEET</h1>
+    <p class="hero-role">Computer Science senior at California State University, Northridge — building full‑stack applications and the self‑hosted infrastructure that runs them.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="mailto:dsweet10189@gmail.com">$ mail daniel</a>
+      <a class="btn" href="https://github.com/DanSweet734" target="_blank" rel="noopener">$ open github</a>
+    </div>
+  </section>
+
+  <section id="about" class="panel reveal">
+    <span class="tag-label">/about</span>
+    <p>I'm a senior Computer Science major at CSUN (B.S., expected Spring 2027, cumulative GPA 3.67), with a background that splits pretty evenly between <strong>writing software</strong> and <strong>running the infrastructure it lives on</strong>. I picked up an interest in both computers and space early on — my father's work with NASA had a lot to do with the latter — and most of what I build now sits somewhere between the two: full‑stack applications, and the self‑hosted systems that keep them running.</p>
+    <p>Comfortable across Python, C++, Java, JavaScript, and TypeScript, with hands-on experience in cloud/virtualization platforms, relational database design, and self-hosted networking.</p>
+  </section>
+
+  <section id="projects" class="panel reveal">
+    <span class="tag-label">/projects</span>
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="card-status"><span class="dot live"></span>running — you're looking at it</div>
+        <h3>Personal Homelab</h3>
+        <div class="meta">Ongoing · Systems &amp; Network Architecture</div>
+        <p>Self-hosted infrastructure platform (Proxmox) running containerized services for external users, including this site. A self-hosted, Tailscale-compatible mesh VPN with ACL-based access control, secure tunnel-based external access with no exposed ports, self-hosted DNS and reverse proxy management, and an automatic sleep/wake system for on-demand game servers.</p>
+        <div class="tag-row">
+          <span class="pill">proxmox</span><span class="pill">docker</span><span class="pill">headscale</span><span class="pill">cloudflare tunnel</span><span class="pill">bash</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-status"><span class="dot"></span>archived — private repo</div>
+        <h3>Personal Shopping Assistant</h3>
+        <div class="meta">Team of 3 · Software Engineering Management</div>
+        <p>AI-powered shopping assistant with barcode scanning, open-ended product Q&amp;A, and resumable conversation history. Firebase-authenticated accounts with profile customization. Database, API, and AI model hosted on personal infrastructure.</p>
+        <div class="tag-row">
+          <span class="pill">typescript</span><span class="pill">javascript</span><span class="pill">python</span><span class="pill">firebase</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-status"><span class="dot"></span>archived — private repo</div>
+        <h3>Hotel Reservation Management System</h3>
+        <div class="meta">Team of 4 · Database Design</div>
+        <p>Full-stack Python application simulating hotel point-of-service operations — check-in, simulated payments, automatic late fees and cancellations, automated email receipts — with a relational schema enforcing integrity across room, customer, and employee records.</p>
+        <div class="tag-row">
+          <span class="pill">python</span><span class="pill">sql</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-status"><span class="dot"></span>archived — private repo</div>
+        <h3>OpenStack VM Provisioning Portal</h3>
+        <div class="meta">Team of 2 · Cloud Computing</div>
+        <p>Self-service VM provisioning portal built on OpenStack inside an Ubuntu virtualization environment, demonstrating core cloud management platform concepts. Majority full-stack contributor.</p>
+        <div class="tag-row">
+          <span class="pill">python</span><span class="pill">javascript</span><span class="pill">html/css</span><span class="pill">openstack</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="panel reveal">
+    <span class="tag-label">/skills</span>
+    <div class="manifest">
+<span class="key">languages </span> python · c++ · java · javascript · typescript
+<span class="key">frameworks</span> react · firebase
+<span class="key">infra     </span> docker · proxmox · linux · openstack · bash
+<span class="key">network   </span> vpn · dns · reverse-proxy</div>
+  </section>
+
+  <section id="contact" class="panel reveal">
+    <span class="tag-label">/contact</span>
+    <h2 style="font-size:clamp(1.6rem,4vw,2.2rem); margin-bottom:14px;">Currently looking for opportunities in systems, full-stack, or research engineering.</h2>
+    <p>Reach out directly, or find me on GitHub — happy to talk through any of the projects above in more detail.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="mailto:dsweet10189@gmail.com">$ mail daniel</a>
+      <a class="btn" href="https://github.com/DanSweet734" target="_blank" rel="noopener">$ open github</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>served from a Proxmox box in Canoga Park, CA</span>
+    <span id="year"></span>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
